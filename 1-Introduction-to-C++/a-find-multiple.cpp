@@ -1,3 +1,4 @@
+// https://atcoder.jp/contests/abc220/tasks/abc220_a
 #include <bits/stdc++.h>
 #include <string.h>
 #define dbg(x) cout << #x << ":" << x << "\n";
