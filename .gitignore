@@ -1,0 +1,16 @@
+# Ignore all files by default
+*
+
+# Un-ignore directories (so Git can look inside them)
+!*/
+
+# Un-ignore .cpp files (in any directory)
+!*.cpp
+
+# Un-ignore .gitignore itself (so it can be tracked)
+!.gitignore
+
+# Optionally, un-ignore other necessary files (e.g., headers, README)
+!*.h
+!*.hpp
+!README.md
