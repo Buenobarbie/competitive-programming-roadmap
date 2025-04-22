@@ -11,21 +11,24 @@ using namespace std;
 #define MAX 10000
 
 void solve(){
-    long long n;
 
+    long long n;
     cin >> n;
-    vector<long long> library;
+
+    multiset<long long> library;
 
     char c;
     long long book;
-    for(long long i = 0; i < n; i++){
+
+    for (long long i = 0; i < n; i++) {
         cin >> c >> book;
 
-        if(c == 'a')      library.push_back(book);
-        else if (c == 't') library.erase(find(library.begin(), library.end(), book));
-    
-        else cout << count(library.begin(), library.end(), book) << "\n";
+        if (c == 'a') library.insert(book); 
+        else if (c == 't')  library.erase(library.find(book));
+        else cout << library.count(book) << "\n"; // O(log n)
+        
     }
+    
 
 }
 
