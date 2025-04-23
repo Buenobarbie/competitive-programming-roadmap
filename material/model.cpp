@@ -1,6 +1,4 @@
 #include <bits/stdc++.h>
-#include <string.h>
-#include <cmath>
 
 #define dbg(x) cout << #x << ":" << x << "\n";
 
